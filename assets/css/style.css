@@ -22,6 +22,8 @@ body {
     justify-content: flex-start;
 }
 
+/* ----- HEADER ----- */
+
 header {
     width: 100%;
     text-align: center;
@@ -56,27 +58,16 @@ nav ul li a {
     font-weight: bold;
 }
 
-iframe {
-    background-color: #fff;
+#title {
+    width: 100%;
+    justify-content: center;
 }
+
+/* ----- MAIN ----- */
 
 main {
-     max-width: 1000px;
-     margin: 0 5%;
-}
-
-footer {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0 25px 25px 25px;
-}
-
-footer p {
-    margin: 0 15px;
-    padding: 0;
+    max-width: 1000px;
+    margin: 0 5%;
 }
 
 h1,h2,h3 {
@@ -90,15 +81,34 @@ h1 img, h2 img, h3 img {
     padding: 0 20px 0 0;
 }
 
+
 section {
     border-bottom: 4px solid #aaa;
     padding-bottom: 25px;
     margin: 25px 0 50px 0;
 }
 
-#title {
+.section-row {
+    display: flex;
+    flex-flow: column;
     width: 100%;
-    justify-content: center;
+}
+
+.section-column {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 15px;
+}
+
+
+/* ----- INTRO ----- */
+/* ----- ABOUT ----- */
+
+iframe {
+    background-color: #fff;
 }
 
 #certification ul{
@@ -106,6 +116,34 @@ section {
     padding: 0;
     margin: 0;
 }
+
+#aboutme-info p{
+    margin: 0 0 25px 0;
+}
+
+.section-column fieldset {
+    height: 100%;
+    padding: 0 25px 25px 25px;
+}
+
+
+/* ----- PROJECTS ----- */
+
+#javascript {
+    margin-bottom: 0;
+}
+#javascript ~ ol {
+    margin: 0;
+}
+
+#javascript-projects li p a {
+    color: #bbbaa9;
+}
+#javascript-projects li {
+    color: #fff;
+}
+
+/* ----- CONTACT ----- */
 
 #contact-form {
     display: flex;
@@ -153,49 +191,36 @@ section {
     color: #343134;
 }
 
-.section-row {
+/* ----- FOOTER ----- */
+
+
+footer {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-}
-
-.section-column {
-    display: flex;
-    flex: 1 1 auto;
-    flex-flow: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 15px;
-}
-
-#aboutme-info p{
-    margin: 0 0 25px 0;
-}
-
-.section-column fieldset {
-    height: 100%;
     padding: 0 25px 25px 25px;
 }
 
-#javascript {
-    margin-bottom: 0;
-}
-#javascript ~ ol {
-    margin: 0;
+footer p {
+    margin: 0 15px;
+    padding: 0;
 }
 
-#javascript-projects li p a {
-    color: #bbbaa9;
-}
-#javascript-projects li {
-    color: #fff;
-}
 
+
+
+
+/* ----- MEDIA QUERIES ----- */
 
 @media all and (min-width: 800px){
+    /* ----- HEADER ----- */
     nav ul {
         flex-flow: row;
     }
+
+    /* ----- MAIN ----- */
     .section-row {
         flex-flow: row;
     }
