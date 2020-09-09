@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<!--
+Code Requirements
+    1. Create page layouts using flexbox.
+    2. Implement appropriate media queries for responsive design.
+    3. Use semantic, valid markup
+    4. Page should be built from scratch (no template usage)
+    5. Code a responsive navigation
+    6. Code a functional contact form
+
+Detail and quality requirements
+    7. Page should not have typos and should offer content clarity and readability
+
+Page Content Requirements
+    8. Intro Section that includes:
+        * Who they are
+        * Where they are
+    9. About Me section:
+        * Some engaging information about them is written in a personal and friendly way.
+        * They shared their passion for the work they are doing
+        * They showed their personality outside of coding
+        * They provided a list of services they can (or want to) provide a client.
+    10. Contact Section has:
+        * Their email address
+        * Link to github profile
+        * Link to linkedin profile
+    11. Project section has:
+        Students may not have any work ready to show yet, a placeholder project is acceptable. The key is knowing they understand and can articulate the requirements for their work.
+        * Title of the project
+        * Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.
+            * Skills used (what is the stack)
+            * Link to the GitHub repo of the project
+            * Link to live, working app
+
+-->
+<body id="bodyid">
+    <header>
+        <h1 id="title">Richard Folea - Portfolio</h1>
+        <span class="credits left">Project maintained by <a href="https://github.com/Aelof3">Aelof3</a></span>
+        <nav>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3 id="intro"><img alt="h2 icon bullet" class="icon--paint" src="favicon.ico" /> Intro</h3>
+            <blockquote>
+                <p>My name is Richard Folea</p>
+                <p>I am a self taught software developer as well as self taught and OSCP certified ethical hacker</p>
+                <p>I live just north of Atlanta, GA</p>
+                <p>My interests include anything that involves critical thinking and problem solving. I am a firm believer
+                    in the idea that nothing is impossible, with the right mindset and attitude</p>
+            </blockquote>
+        </section>
+
+        <section>
+            <h2 id="aboutme"><img alt="h2 icon bullet" class="icon--paint" src="favicon.ico" />About Me</h2>
+
+            <div class="section-row">
+                <div class="section-column">
+                    <fieldset id="aboutme-info">
+                        <legend><h3>Info</h3></legend>
+                        <p>I am a learning enthusiast. I enjoy picking up new skills and brain teasers. If I do not know something,
+                            I will obsess until I get to the point where I can explain a subject matter to an elementary school
+                            student. Anything less is not good enough.</p>
+                        <p>My passions include:</p>
+                        <ul>
+                            <li>Software Development</li>
+                            <li>Ethical Hacking and Bug Bounty hunting</li>
+                            <li>Helping others in an effort to pursue knowledge</li>
+                            <li>Penetration Testing Capture The Flag events</li>
+                            <li>Spending time with my girlfriend and dog</li>
+                        </ul>
+                    </fieldset>
+                </div>
+
+                <div class="section-column">
+                    <fieldset id="certification">
+                        <legend><h3>Certification</h3></legend>
+                        <ul>
+                            <li class="cert">
+                                <div data-iframe-width="150" data-iframe-height="270"
+                                    data-share-badge-id="25db4f5e-c6eb-406a-a661-7529a44d5d46"
+                                    data-share-badge-host="https://www.youracclaim.com"></div>
+                                <script type="text/javascript" async
+                                    src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="projects"><img alt="h2 icon bullet" class="icon--paint" src="favicon.ico" /> Projects</h2>
+
+            <div class="section-column">
+                <h3 id="javascript">Javascript</h3>
+                <ol id="javascript-projects">
+                    <li>
+                        <p>
+                            <a href="https://aelof3.github.io/Helping_Aussies_Land_Builder_Template_WebGL_THREEJS/">Island
+                                Builder</a>
+                        </p>
+                        <ul>
+                            <li>Helped a group flush out an Island Builder made with Three.js.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="https://aelof3.github.io/planets/">Planet Hopping Game</a>
+                        </p>
+                        <ul>
+                            <li>Wanted to learn a bit about 3D in browsers, as well as WebGL.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="https://aelof3.github.io/DuckDrone/">A hard game of fighting physics with a duck</a>
+                        </p>
+                        <ul>
+                            <li>Had an idea, and wanted to see if I could figure out a way to do it.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="https://github.com/Aelof3/threejs_maze_texture">3D Maze Texture Generator</a>
+                        </p>
+                        <ul>
+                            <li>Created a maze generator using Three.js</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="https://aelof3.github.io/memeroulette/">Meme Roulette</a>
+                        </p>
+                        <ul>
+                            <li>Pulls random memes from several configurable subreddits.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="https://github.com/Aelof3/websocket-platformer">Websocket Platformer</a>
+                        </p>
+                        <ul>
+                            <li>Experiment to create a platformer that multiple people can be playing at the same time
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+
+            <form id="contact-form" action="https://formspree.io/xoqkgpgz" method="POST">
+                <div class="section-row">
+                    <label class="label-input-text" for="user-name">Name:<input id="user-name" type="text" name="name"></label>
+                    <label class="label-input-text" for="user-email">Email:<input id="user-email" type="text" name="email"></label>
+                </div>
+                <label for="user-message">Message:</label>
+                <textarea id="user-message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p><a href="mailto:folea3@gmail.com">folea3@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/richard-f-653b7514b/">LinkedIn</a></p>
+        <p><a href="https://github.com/Aelof3">GitHub</a></p>
+    </footer>
+</body>
+
+</html>
