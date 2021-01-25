@@ -128,13 +128,12 @@
     border: 0.5rem solid #eee;
     border-radius: 0.5rem;
 }
-
+/* 
 @media all and (max-width: 500px) {
     .css-carousel-panel {
         height: calc(var(--panel-width) * 1.5);
     }
-
-}
+} */
 /*
 @media all and (max-width: 700px) {
     .css-carousel-panel {
