@@ -84,13 +84,12 @@
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 100%;
 }
 
 .css-carousel-panel-content div.intro-wrap li .intro-wrap-list-content-interests li{
     padding: 0;
-    margin: 0;
     border: 0.25rem solid rgba(200,255,200,1);
     background-color: rgba(0,255,0,0.2);
     display: flex;
@@ -98,11 +97,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 1rem;
     border-radius: 100rem;
-    width: min(20vw, 175px);
-    margin: 0 0.5rem;
-    height: min(20vw, 175px);
+    width: min(15vw, 150px);
+    margin: 0 1.5rem;
+    height: min(15vw, 150px);
     flex: 0 1 auto;
 }
 .css-carousel-panel-content div.intro-wrap li .intro-wrap-list-content-interests li::before{

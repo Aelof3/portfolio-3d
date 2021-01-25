@@ -1,5 +1,5 @@
 :root {
-  font-size:max(calc(0.75vw + 6px),calc(0.75vh + 6px));
+  font-size:max(calc(0.65vw + 7px),calc(0.65vh + 7px));
 }
 html, body {
   margin: 0;
