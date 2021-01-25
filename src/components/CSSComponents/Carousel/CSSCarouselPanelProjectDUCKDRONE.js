@@ -8,7 +8,7 @@ export default class CSSCarouselPanelProjectDUCKDRONE extends Component {
             <>
                 <img alt="" src={img} />
                 <p>
-                    <a href="https://github.com/Aelof3/DuckDrone/">Repository - https://github.com/Aelof3/DuckDrone</a>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/Aelof3/DuckDrone/">Repository - https://github.com/Aelof3/DuckDrone</a>
                 </p>
                 <ul>
                     <li><strong>Name:</strong>DuckDrone</li>

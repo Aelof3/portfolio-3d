@@ -8,7 +8,7 @@ export default class CSSCarouselPanelProjectWAM extends Component {
             <>
                 <img alt="" src={img} />
                 <p>
-                    <a href="https://github.com/Aelof3/wam">Repository - https://github.com/Aelof3/wam</a>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/Aelof3/wam">Repository - https://github.com/Aelof3/wam</a>
                 </p>
                 <ul>
                     <li><strong>Name:</strong>Whack-A-Mole 3D</li>

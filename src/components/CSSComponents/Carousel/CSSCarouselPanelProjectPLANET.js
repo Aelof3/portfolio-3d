@@ -8,7 +8,7 @@ export default class CSSCarouselPanelProjectPLANET extends Component {
              <>
                 <img alt="" src={img} />
                 <p>
-                    <a href="https://github.com/Aelof3/planets/">Repository - https://github.com/Aelof3/planets/</a>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/Aelof3/planets/">Repository - https://github.com/Aelof3/planets/</a>
                 </p>
                 <ul>
                     <li><strong>Name:</strong>Planet Hopper</li>

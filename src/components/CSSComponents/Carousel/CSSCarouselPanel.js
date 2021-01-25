@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './carousel.css';
-import CSSCarouselControlsLabels from './CSSCarouselControlsLabels';
 
 export default class CSSCarouselPanel extends Component {
     render() {

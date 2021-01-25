@@ -39,7 +39,7 @@ export default class CSSCarouselPanelAbout extends Component {
                     <li>
                         <div className="about-wrap-list-content">
                             <h3>Certification</h3>
-                            <a className="css-button arrow cert-url" href="https://www.youracclaim.com/badges/25db4f5e-c6eb-406a-a661-7529a44d5d46/public_url">Link to Certification</a>
+                            <a target="_blank" rel="noreferrer" className="css-button arrow cert-url" href="https://www.youracclaim.com/badges/25db4f5e-c6eb-406a-a661-7529a44d5d46/public_url">Link to Certification</a>
                         </div>
                     </li>
                 </ul>

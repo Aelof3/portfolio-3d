@@ -8,7 +8,7 @@ export default class CSSCarouselPanelProjectHMONG extends Component {
              <>
                 <img alt="" src={img} />
                 <p>
-                    <a href="https://github.com/Aelof3/spaced-repetition">Repository - https://github.com/Aelof3/spaced-repetition</a>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/Aelof3/spaced-repetition">Repository - https://github.com/Aelof3/spaced-repetition</a>
                 </p>
                 <ul>
                     <li><strong>Name:</strong>Spaced Repetition - Learning Hmong</li>
