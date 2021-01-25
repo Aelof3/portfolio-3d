@@ -1,7 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .css-button {
   display: inline-block;
@@ -13,9 +11,6 @@
   background: #009ED8;
   border: none;
   color: white;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  -moz-transition: 0.2s;
   transition: 0.2s;
 }
 .css-button:before,
@@ -31,15 +26,8 @@
   font-family: 'FontAwesome', sans-serif;
   font-size: 1.2em;
   text-align: center;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  -moz-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform-origin: 50% 60%;
-     -moz-transform-origin: 50% 60%;
-      -ms-transform-origin: 50% 60%;
-       -o-transform-origin: 50% 60%;
-          transform-origin: 50% 60%;
+  transform-origin: 50% 60%;
 }
 .css-button:before {
   background: rgba(0, 0, 0, 0.1);
@@ -54,9 +42,7 @@
 }
 .css-button {
   min-width: 15em;
-  -webkit-transform-style: preserve-3d;
-     -moz-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 .arrow {
   background: #079702;
@@ -73,9 +59,7 @@
 }
 .arrow:hover:after {
   -webkit-animation: bounceright 0.3s alternate ease infinite;
-  -moz-animation: bounceright 0.3s alternate ease infinite;
-    -o-animation: bounceright 0.3s alternate ease infinite;
-       animation: bounceright 0.3s alternate ease infinite;
+  animation: bounceright 0.3s alternate ease infinite;
 }
 .phone {
   background: #139675;
@@ -92,9 +76,7 @@
 }
 .phone:hover:after {
   -webkit-animation: wiggle 0.05s alternate ease infinite;
-  -moz-animation: wiggle 0.05s alternate ease infinite;
-    -o-animation: wiggle 0.05s alternate ease infinite;
-       animation: wiggle 0.05s alternate ease infinite;
+  animation: wiggle 0.05s alternate ease infinite;
 }
 .email {
   background: #C673B3;
@@ -112,13 +94,8 @@
 .email:hover:after {
   -webkit-animation: none;
   -webkit-transform: skew(-20deg);
-  -moz-animation: none;
-    -o-animation: none;
-       animation: none;
-  -moz-transform: skew(-20deg);
-   -ms-transform: skew(-20deg);
-    -o-transform: skew(-20deg);
-       transform: skew(-20deg);
+  animation: none;
+  transform: skew(-20deg);
   text-indent: 0.1em;
 }
 .search:after {
@@ -127,13 +104,8 @@
 .search:hover:after {
   -webkit-animation: none;
   -webkit-transform: scale(1.4);
-  -moz-animation: none;
-    -o-animation: none;
-       animation: none;
-  -moz-transform: scale(1.4);
-   -ms-transform: scale(1.4);
-    -o-transform: scale(1.4);
-       transform: scale(1.4);
+  animation: none;
+  transform: scale(1.4);
 }
 @-webkit-keyframes bounceright {
   from {
@@ -151,71 +123,19 @@
     -webkit-transform: rotate(30deg);
   }
 }
-@-moz-keyframes bounceright {
-  from {
-    -moz-transform: translateX(0);
-         transform: translateX(0);
-  }
-  to {
-    -moz-transform: translateX(3px);
-         transform: translateX(3px);
-  }
-}
-@-o-keyframes bounceright {
-  from {
-    -o-transform: translateX(0);
-       transform: translateX(0);
-  }
-  to {
-    -o-transform: translateX(3px);
-       transform: translateX(3px);
-  }
-}
 @keyframes bounceright {
   from {
-    -webkit-transform: translateX(0);
-       -moz-transform: translateX(0);
-         -o-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(3px);
-       -moz-transform: translateX(3px);
-         -o-transform: translateX(3px);
-            transform: translateX(3px);
-  }
-}
-@-moz-keyframes wiggle {
-  from {
-    -moz-transform: rotate(0deg);
-         transform: rotate(0deg);
-  }
-  to {
-    -moz-transform: rotate(30deg);
-         transform: rotate(30deg);
-  }
-}
-@-o-keyframes wiggle {
-  from {
-    -o-transform: rotate(0deg);
-       transform: rotate(0deg);
-  }
-  to {
-    -o-transform: rotate(30deg);
-       transform: rotate(30deg);
+    transform: translateX(3px);
   }
 }
 @keyframes wiggle {
   from {
-    -webkit-transform: rotate(0deg);
-       -moz-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(30deg);
-       -moz-transform: rotate(30deg);
-         -o-transform: rotate(30deg);
-            transform: rotate(30deg);
+    transform: rotate(30deg);
   }
 }
