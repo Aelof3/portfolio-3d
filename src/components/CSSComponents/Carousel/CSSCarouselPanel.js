@@ -5,15 +5,14 @@ import CSSCarouselControlsLabels from './CSSCarouselControlsLabels';
 export default class CSSCarouselPanel extends Component {
     render() {
         return (
-            <section className="css-carousel-panel">
-                <CSSCarouselControlsLabels />
+            <div className="css-carousel-panel">
                 <h2 className="css-carousel-panel-header">
                     {this.props.header}
                 </h2>
                 <div className="css-carousel-panel-content">
                     {this.props.children}
                 </div>
-            </section>
+            </div>
         );
     }
 }

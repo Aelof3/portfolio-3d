@@ -5,25 +5,55 @@
 .css-carousel-controls input[type="radio"] {
     margin: 0;
     position: fixed;
-    bottom: 6rem;
-    left: 0rem;
-    width: 0rem;
-    height: 0rem;
+    top: 1.5rem;
+    left: 50%;
+    width: 1rem;
+    height: 1rem;
     z-index: 1000;
-    opacity: 0;
+    opacity: 1;
+}
+#panel-1 {
+    left: calc(50% - 12rem);
+}
+#panel-2 {
+    left: calc(50% - 9rem);
+}
+#panel-3 {
+    left: calc(50% - 6rem);
+}
+#panel-4 {
+    left: calc(50% - 3rem);
+}
+#panel-5 {
+    left: calc(50% - 0rem);
+}
+#panel-6 {
+    left: calc(50% + 3rem);
+}
+#panel-7 {
+    left: calc(50% + 6rem);
+}
+#panel-8 {
+    left: calc(50% + 9rem);
+}
+#panel-9 {
+    left: calc(50% + 12rem);
 }
 .css-carousel-controls .css-carousel-controls-labels {
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
+    position: fixed;
+    right: 0;
+    bottom: calc(2.5rem + 30px);
     display: flex;
     flex-flow: row;
     justify-content: center;
     z-index: 1000;
+    width: 100vw;
 }
 
 .css-carousel-controls .css-carousel-controls-labels label{
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
     /* border: 1px solid rgb(255, 255, 255);
     background-color: rgba(32,27,105,0.8);
     margin: 0.25rem;
@@ -36,6 +66,8 @@
     cursor: pointer;
     font-size: 0rem;
     transform-style: preserve-3d;
+    width: max(35%,250px);
+    margin: 0 auto;
 }
 
 .css-carousel-controls .css-carousel-controls-labels label:hover::before {
@@ -50,175 +82,175 @@
     margin:0.25rem;
     transform: translateZ(10px);
     opacity: 1;
-    font-size: 2rem;
+    font-size: min(calc(1vw + 12px),calc(1vh + 12px));
 }
-.css-carousel-controls #panel-1:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-1"]{
+.css-carousel-controls #panel-1:checked ~ .css-carousel-controls-labels label[for="panel-1"]{
     /* border: 1px solid rgba(40, 184, 59, 0.8);
     background-color: rgba(30, 105, 27, 0.8); */
 }
-.css-carousel-controls #panel-1:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-2"]::before{
+.css-carousel-controls #panel-1:checked ~ .css-carousel-controls-labels label[for="panel-2"]::before{
     content: "NEXT";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
     right:1rem;
 }
-.css-carousel-controls #panel-1:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-9"]::before{
+.css-carousel-controls #panel-1:checked ~ .css-carousel-controls-labels label[for="panel-9"]::before{
     content: "PREV";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
-    right: 10rem;
+    left: 1rem;
 }
 
-.css-carousel-controls #panel-2:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-2"]{
+.css-carousel-controls #panel-2:checked ~ .css-carousel-controls-labels label[for="panel-2"]{
     /* border: 1px solid rgba(40, 184, 59, 0.8);
     background-color: rgba(30, 105, 27, 0.8); */
 }
-.css-carousel-controls #panel-2:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-3"]::before{
+.css-carousel-controls #panel-2:checked ~ .css-carousel-controls-labels label[for="panel-3"]::before{
     content: "NEXT";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
     right:1rem;
 }
-.css-carousel-controls #panel-2:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-1"]::before{
+.css-carousel-controls #panel-2:checked ~ .css-carousel-controls-labels label[for="panel-1"]::before{
     content: "PREV";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
-    right: 10rem;
+    left: 1rem;
 }
 
-.css-carousel-controls #panel-3:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-3"]{
+.css-carousel-controls #panel-3:checked ~ .css-carousel-controls-labels label[for="panel-3"]{
     /* border: 1px solid rgba(40, 184, 59, 0.8);
     background-color: rgba(30, 105, 27, 0.8); */
 }
-.css-carousel-controls #panel-3:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-4"]::before{
+.css-carousel-controls #panel-3:checked ~ .css-carousel-controls-labels label[for="panel-4"]::before{
     content: "NEXT";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
     right:1rem;
 }
-.css-carousel-controls #panel-3:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-2"]::before{
+.css-carousel-controls #panel-3:checked ~ .css-carousel-controls-labels label[for="panel-2"]::before{
     content: "PREV";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
-    right: 10rem;
+    left: 1rem;
 }
 
-.css-carousel-controls #panel-4:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-4"]{
+.css-carousel-controls #panel-4:checked ~ .css-carousel-controls-labels label[for="panel-4"]{
     /* border: 1px solid rgba(40, 184, 59, 0.8);
     background-color: rgba(30, 105, 27, 0.8); */
 }
-.css-carousel-controls #panel-4:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-5"]::before{
+.css-carousel-controls #panel-4:checked ~ .css-carousel-controls-labels label[for="panel-5"]::before{
     content: "NEXT";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
     right:1rem;
 }
-.css-carousel-controls #panel-4:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-3"]::before{
+.css-carousel-controls #panel-4:checked ~ .css-carousel-controls-labels label[for="panel-3"]::before{
     content: "PREV";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
-    right: 10rem;
+    left: 1rem;
 }
 
-.css-carousel-controls #panel-5:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-5"]{
+.css-carousel-controls #panel-5:checked ~ .css-carousel-controls-labels label[for="panel-5"]{
     /* border: 1px solid rgba(40, 184, 59, 0.8);
     background-color: rgba(30, 105, 27, 0.8); */
 }
-.css-carousel-controls #panel-5:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-6"]::before{
+.css-carousel-controls #panel-5:checked ~ .css-carousel-controls-labels label[for="panel-6"]::before{
     content: "NEXT";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
     right:1rem;
 }
-.css-carousel-controls #panel-5:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-4"]::before{
+.css-carousel-controls #panel-5:checked ~ .css-carousel-controls-labels label[for="panel-4"]::before{
     content: "PREV";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
-    right: 10rem;
+    left: 1rem;
 }
 
-.css-carousel-controls #panel-6:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-6"]{
+.css-carousel-controls #panel-6:checked ~ .css-carousel-controls-labels label[for="panel-6"]{
     /* border: 1px solid rgba(40, 184, 59, 0.8);
     background-color: rgba(30, 105, 27, 0.8); */
 }
-.css-carousel-controls #panel-6:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-7"]::before{
+.css-carousel-controls #panel-6:checked ~ .css-carousel-controls-labels label[for="panel-7"]::before{
     content: "NEXT";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
     right:1rem;
 }
-.css-carousel-controls #panel-6:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-5"]::before{
+.css-carousel-controls #panel-6:checked ~ .css-carousel-controls-labels label[for="panel-5"]::before{
     content: "PREV";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
-    right: 10rem;
+    left: 1rem;
 }
 
-.css-carousel-controls #panel-7:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-7"]{
+.css-carousel-controls #panel-7:checked ~ .css-carousel-controls-labels label[for="panel-7"]{
     /* border: 1px solid rgba(40, 184, 59, 0.8);
     background-color: rgba(30, 105, 27, 0.8); */
 }
-.css-carousel-controls #panel-7:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-8"]::before{
+.css-carousel-controls #panel-7:checked ~ .css-carousel-controls-labels label[for="panel-8"]::before{
     content: "NEXT";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
     right:1rem;
 }
-.css-carousel-controls #panel-7:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-6"]::before{
+.css-carousel-controls #panel-7:checked ~ .css-carousel-controls-labels label[for="panel-6"]::before{
     content: "PREV";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
-    right: 10rem;
+    left: 1rem;
 }
 
-.css-carousel-controls #panel-8:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-8"]{
+.css-carousel-controls #panel-8:checked ~ .css-carousel-controls-labels label[for="panel-8"]{
     /* border: 1px solid rgba(40, 184, 59, 0.8);
     background-color: rgba(30, 105, 27, 0.8); */
 }
-.css-carousel-controls #panel-8:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-9"]::before{
+.css-carousel-controls #panel-8:checked ~ .css-carousel-controls-labels label[for="panel-9"]::before{
     content: "NEXT";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
     right:1rem;
 }
-.css-carousel-controls #panel-8:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-7"]::before{
+.css-carousel-controls #panel-8:checked ~ .css-carousel-controls-labels label[for="panel-7"]::before{
     content: "PREV";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
-    right: 10rem;
+    left: 1rem;
 }
 
-.css-carousel-controls #panel-9:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-9"]{
+.css-carousel-controls #panel-9:checked ~ .css-carousel-controls-labels label[for="panel-9"]{
     /* border: 1px solid rgba(40, 184, 59, 0.8);
     background-color: rgba(30, 105, 27, 0.8); */
 }
-.css-carousel-controls #panel-9:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-1"]::before{
+.css-carousel-controls #panel-9:checked ~ .css-carousel-controls-labels label[for="panel-1"]::before{
     content: "NEXT";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
     right:1rem;
 }
-.css-carousel-controls #panel-9:checked ~ .css-carousel .css-carousel-controls-labels label[for="panel-8"]::before{
+.css-carousel-controls #panel-9:checked ~ .css-carousel-controls-labels label[for="panel-8"]::before{
     content: "PREV";
     background-color: var(--button-bg);
     padding:0.25rem 0.75rem;
     top:1rem;
-    right: 10rem;
+    left: 1rem;
 }

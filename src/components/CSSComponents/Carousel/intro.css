@@ -84,7 +84,7 @@
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -100,9 +100,9 @@
     text-align: center;
     padding: 1rem;
     border-radius: 100rem;
-    width: min(calc(55vw / 4), 150px);
+    width: min(20vw, 175px);
     margin: 0 0.5rem;
-    height: min(calc(55vw / 4), 150px);
+    height: min(20vw, 175px);
     flex: 0 1 auto;
 }
 .css-carousel-panel-content div.intro-wrap li .intro-wrap-list-content-interests li::before{
