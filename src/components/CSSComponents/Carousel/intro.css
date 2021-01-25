@@ -6,6 +6,17 @@
     flex: 0 0 auto;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.css-carousel-panel-content div.intro-wrap > img {
+    object-position: center;
+}
+
+.css-carousel-panel-content div.intro-wrap ul {
+    flex: 0 0 auto;
+    margin: 0;
 }
 
 .css-carousel-panel-content div.intro-wrap h4{
@@ -49,7 +60,7 @@
 }
 
 .css-carousel-panel-content div.intro-wrap img.intro-location-image {
-    object-position: center;
+    object-position: 0 -60px;
     height: min(10vw,200px);
     flex: 0 0 auto;
 }
@@ -89,9 +100,9 @@
     text-align: center;
     padding: 1rem;
     border-radius: 100rem;
-    width: min(calc(55vw / 4), 250px);
+    width: min(calc(55vw / 4), 150px);
     margin: 0 0.5rem;
-    height: min(calc(55vw / 4), 250px);
+    height: min(calc(55vw / 4), 150px);
     flex: 0 1 auto;
 }
 .css-carousel-panel-content div.intro-wrap li .intro-wrap-list-content-interests li::before{
@@ -104,4 +115,5 @@
 }
 .css-carousel-panel-content div.intro-wrap li .intro-wrap-list-content-interests li p{
     font-weight: bold;
+    font-size: 0.75rem;
 }
