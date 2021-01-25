@@ -81,6 +81,7 @@
     position: relative;
     width: var(--panel-width);
     height: var(--panel-width);
+    max-height: 100vh;
     transform-style: preserve-3d;
     transform-origin: center;
     transform: perspective(calc(var(--panel-width) * 200)) rotateX(90deg) translateY(var(--panel-width));
