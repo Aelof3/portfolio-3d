@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 :root {
-    --panel-width: min(1200px,110vw);
+    --panel-width: min(1600px,110vw);
     --panel-height: 100vh;
     --color1: rgba(0,0,0,0.75);
     --color2: rgba(255,255,255,0.2);
@@ -11,6 +11,10 @@
 .App {
     perspective-origin: center;
     perspective: calc(var(--panel-width) * 2);
+}
+
+.css-carousel-controls {
+    -moz-transform-style: preserve-3d;
 }
 
 @keyframes spin {
@@ -79,7 +83,7 @@
     height: var(--panel-width);
     transform-style: preserve-3d;
     transform-origin: center;
-    transform: rotateX(90deg) translateY(var(--panel-width));
+    transform: perspective(calc(var(--panel-width) * 200)) rotateX(90deg) translateY(var(--panel-width));
 }
 
 .css-carousel-wrap {
@@ -88,6 +92,7 @@
     left: 50%;
     width: var(--panel-width);
     height: var(--panel-height);
+    transform-style: preserve-3d;
     transform-origin: center;
     /* animation: spin 10s ease-in-out infinite; */
     transition-duration: 0.5s;
@@ -112,6 +117,7 @@
     padding: 1rem;
     background-color: var(--color1);
     border: 0.5rem solid #eee;
+    transform-style: preserve-3d;
     transform-origin: center;
     border-radius: 0.5rem;
     transform: translate(-50%,-50%) rotateZ(0deg);
@@ -181,7 +187,7 @@
 }
 
 .css-carousel-panel-content img {
-    flex: 1;
+    flex: 1 1 auto;
     position: relative;
     width: 100%;
     height: min(20%,200px);
