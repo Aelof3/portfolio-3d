@@ -1,0 +1,320 @@
+
+
+@keyframes spin2 {
+    0% {
+        transform: rotateZ(0deg) rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateZ(0deg) rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.css-level {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+    animation: spin2 25s linear infinite;
+}
+
+.css-level-rotate {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+div.css-level-platform::before,
+div.css-level-platform::after {
+    background: url('../../brick.png') no-repeat center / cover;
+}
+
+
+
+div.css-level-platform.plat-open {
+    /* background-color: rgba(255,255,255,0.275); */
+    background: url('../../tile.jpg') no-repeat center / cover;
+}
+
+div[class*="wall-left"].css-level-platform.plat-open,
+div[class*="wall-right"].css-level-platform.plat-open,
+div[class*="wall-top"].css-level-platform.plat-open,
+div[class*="wall-bot"].css-level-platform.plat-open {
+    background: url('../../tile.jpg') no-repeat center / cover;
+}
+
+div.css-level-platform.plat-open {
+    position: absolute;
+    top:0;
+    left:0;
+    transform-style: preserve-3d;
+    transition-duration: 0.25s;
+    
+}
+
+
+
+
+
+
+
+div.css-level-platform.wall-top::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    z-index: 1;
+    transform-origin: top;
+    transform: rotateX(90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.wall-bot::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 1;
+    transform-origin: bottom;
+    transform: rotateX(-90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.wall-left::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 1;
+    transform-origin: left;
+    transform: rotateY(-90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.wall-right::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    z-index: 1;
+    transform-origin: right;
+    transform: rotateY(90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+
+
+
+
+div.css-level-platform.corner-one::before { /* top left */
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 1;
+    transform-origin: left;
+    transform: rotateY(-90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.corner-one::after { /* top left */
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 1;
+    transform-origin: top;
+    transform: rotateX(90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.corner-two::before { /* top right */
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    z-index: 1;
+    transform-origin: right;
+    transform: rotateY(90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.corner-two::after { /* top right */
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 1;
+    transform-origin: top;
+    transform: rotateX(90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.corner-three::before { /* bottom right */
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    z-index: 1;
+    transform-origin: right;
+    transform: rotateY(90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.corner-three::after { /* bottom right */
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 1;
+    transform-origin: bottom;
+    transform: rotateX(-90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.corner-four::before { /* bottom left */
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 1;
+    transform-origin: left;
+    transform: rotateY(-90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.corner-four::after { /* bottom left */
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 1;
+    transform-origin: bottom;
+    transform: rotateX(-90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+
+
+
+
+
+
+
+
+div.css-level-platform.plat-vert {
+    position: absolute;
+    top:0;
+    left:0;
+    transform-style: preserve-3d;
+    transition-duration: 0.25s;
+    background: url('../../tile.jpg') no-repeat center / cover;
+}
+
+div.css-level-platform.plat-vert::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 1;
+    transform-origin: left;
+    transform: rotateY(-90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.plat-vert::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    z-index: 1;
+    transform-origin: right;
+    transform: rotateY(90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+
+
+
+div.css-level-platform.plat-horiz {
+    position: absolute;
+    top:0;
+    left:0;
+    transform-style: preserve-3d;
+    transition-duration: 0.25s;
+    background: url('../../tile.jpg') no-repeat center / cover;
+}
+
+div.css-level-platform.plat-horiz::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 1;
+    transform-origin: top;
+    transform: rotateX(90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+div.css-level-platform.plat-horiz::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    z-index: 1;
+    transform-origin: bottom;
+    transform: rotateX(-90deg) translateZ(0px);
+    transition-duration: 0.25s;
+}
+
+

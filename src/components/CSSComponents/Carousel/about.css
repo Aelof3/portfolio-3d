@@ -1,0 +1,39 @@
+.css-carousel-panel-content div.about-wrap {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.css-carousel-panel-content div.about-wrap *{
+    text-align: left;
+}
+
+.css-carousel-panel-content div.about-wrap > ul{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.css-carousel-panel-content div.about-wrap .css-button.arrow{
+    width: 100%;
+}
+
+.css-carousel-panel-content div.about-wrap ul li .about-wrap-list-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.css-carousel-panel-content div.about-wrap ul li .about-wrap-list-content p{
+    margin: 0.25rem 0;
+}
+
+.css-carousel-panel-content div.about-wrap ul li .about-wrap-list-content h3{
+    margin: 0.25rem 0;
+    font-size: 1.2rem;
+}
+

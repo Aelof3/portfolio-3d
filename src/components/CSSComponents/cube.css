@@ -1,0 +1,85 @@
+:root {
+    --cube-size: 5vw;
+    --cube-side-color-1: red;
+    --cube-side-color-2: blue;
+    --cube-side-color-3: yellow;
+    --cube-side-color-4: green;
+    --cube-side-color-5: orange;
+    --cube-side-color-6: purple;
+}
+
+
+.css-cube {
+    position: relative;
+    width: var(--cube-size);
+    height: var(--cube-size);
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    animation: spin 3s linear infinite;
+}
+
+.css-cube * {
+    box-sizing: border-box;
+}
+
+.css-cube-side {
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    opacity: 0.5;
+    border: 2px solid #000;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* front */
+.css-cube-side:nth-child(1){
+    background-color: var(--cube-side-color-1);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(calc(var(--cube-size) / 2));
+}
+
+/* back */
+.css-cube-side:nth-child(2){
+    background-color: var(--cube-side-color-2);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(calc(-1 * var(--cube-size) / 2));
+}
+
+/* left */
+.css-cube-side:nth-child(3){
+    background-color: var(--cube-side-color-3);
+    transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(calc(-1 * var(--cube-size) / 2));
+}
+
+/* right */
+.css-cube-side:nth-child(4){
+    background-color: var(--cube-side-color-4);
+    transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(calc(var(--cube-size) / 2));
+}
+
+/* bottom */
+.css-cube-side:nth-child(5){
+    background-color: var(--cube-side-color-5);
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(calc(-1 * var(--cube-size) / 2));
+}
+
+/* top */
+.css-cube-side:nth-child(6){
+    background-color: var(--cube-side-color-6);
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(calc(var(--cube-size) / 2));
+}
+
+
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(0deg);
+    }
+}

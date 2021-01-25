@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size:max(calc(0.5vw + 9px),calc(0.5vh + 9px));
+}
+
+@media all and (max-width: 700px) {
+  html, body {
+    font-size: 1vh;
+  }
+}
+
+* {
+  box-sizing: border-box !important;
+  text-rendering: optimizeLegibility;
+  font-kerning: auto;
+  outline: 0 !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  color: #fff;
+}
+
+html {
+  font-family: sans-serif;
+  background: #000;
+}
+
+a { 
+  text-decoration: none;
+}

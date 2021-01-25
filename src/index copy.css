@@ -1,0 +1,232 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box !important;
+  text-rendering: optimizeLegibility;
+  font-kerning: auto;
+  outline: 0 !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  color: #bbbaa9;
+}
+
+html {
+  font-family: sans-serif;
+  background: #343134;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* ----- HEADER ----- */
+
+header {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  margin-bottom: 25px;
+  border-bottom: 4px solid #aaa;
+}
+
+nav {
+  margin-top: 25px;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 15px 50px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#title {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ----- MAIN ----- */
+
+main {
+  max-width: 1000px;
+  margin: 0 5%;
+}
+
+h1,h2,h3 {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  color: #fff;
+}
+
+h1 img, h2 img, h3 img {
+  padding: 0 20px 0 0;
+}
+
+
+section {
+  border-bottom: 4px solid #aaa;
+  padding-bottom: 25px;
+  margin: 25px 0 50px 0;
+}
+
+.section-row {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.section-column {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 15px;
+}
+
+
+/* ----- INTRO ----- */
+/* ----- ABOUT ----- */
+
+iframe {
+  background-color: #fff;
+}
+
+#certification ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#aboutme-info p{
+  margin: 0 0 25px 0;
+}
+
+.section-column fieldset {
+  height: 100%;
+  padding: 0 25px 25px 25px;
+}
+
+
+/* ----- PROJECTS ----- */
+
+#javascript {
+  margin-bottom: 0;
+}
+#javascript ~ ol {
+  margin: 0;
+}
+
+#javascript-projects li p a {
+  color: #bbbaa9;
+}
+#javascript-projects li {
+  color: #fff;
+}
+
+/* ----- CONTACT ----- */
+
+#contact-form {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+#contact-form input{
+  width: 100%;
+  padding: 5px;
+  color: #000;
+}
+
+#contact-form .label-input-text {
+  width: 100%;
+  flex:1;
+  padding:15px;
+}
+
+#contact-form textarea {
+  flex:1;
+  margin:0 15px 15px 15px;
+  min-height: 100px;
+  color: #000;
+}
+
+#contact-form label[for="user-message"] {
+  flex:1;
+  margin:0 15px;
+}
+
+#contact-form button {
+  flex: 0 0 auto;
+  width: 200px;
+  padding: 10px 15px;
+  margin: 15px;
+  background: none;
+  color: #bbbaa9;
+  border: 2px solid #bbbaa9;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #bbbaa9;
+  color: #343134;
+}
+
+/* ----- FOOTER ----- */
+
+
+footer {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 25px 25px 25px;
+}
+
+footer p {
+  margin: 0 15px;
+  padding: 0;
+}
+
+
+
+
+
+/* ----- MEDIA QUERIES ----- */
+
+@media all and (min-width: 800px){
+  /* ----- HEADER ----- */
+  nav ul {
+      flex-flow: row;
+  }
+
+  /* ----- MAIN ----- */
+  .section-row {
+      flex-flow: row;
+  }
+}
