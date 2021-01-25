@@ -8,11 +8,14 @@ export default class CSSCarouselPanelProjectMAZE extends Component {
             <>
                 <img alt="" src={img} />
                 <p>
-                    <a href="https://github.com/Aelof3/threejs_maze_texture">3D Maze Texture Generator - https://github.com/Aelof3/threejs_maze_texture</a>
+                    <a href="https://github.com/Aelof3/threejs_maze_texture">Repository - https://github.com/Aelof3/threejs_maze_texture</a>
                 </p>
                 <ul>
-                    <li>Created a maze generator using Three.js</li>
-                    <li>Uses three.js</li>
+                    <li><strong>Name:</strong>3D Maze Texture Generator</li>
+                    <li><strong>Description:</strong>Maze texture generation application</li>
+                    <li><strong>Why It Was Built:</strong>I Challenged myself to see if I could make it happen</li>
+                    <li><strong>Technologies:</strong>Uses three.js</li>
+                    <li><strong>Intended Audience:</strong>People looking to generate 3D maze textures for HTML canvas projects</li>
                 </ul>
                 <CSSButton href="https://aelof3.github.io/threejs_maze_texture/" text="Live Demo" />
             </>

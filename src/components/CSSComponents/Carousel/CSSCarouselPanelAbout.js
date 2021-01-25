@@ -10,8 +10,11 @@ export default class CSSCarouselPanelAbout extends Component {
                         <div className="about-wrap-list-content">
                             <h3>Info</h3>
                             <p>I am a learning enthusiast. I enjoy picking up new skills and brain teasers. If I do not know something,
-                            I will obsess until I get to the point where I can explain a subject matter to an elementary school
+                                I will obsess until I get to the point where I can explain a subject matter to an elementary school
                                 student. Anything less is not good enough.</p>
+                            <p>Coding is a great example of something that I can always learn more about. This is probably why I enjoy it so much.</p>
+                            <p>I am also a fiend for debugging, and well known among friends for being the go-to guy for help. I like to spend as much
+                                time as I can helping fresh coding minds, and watching their ambition grow.</p>
                         </div>
                     </li>
                     <li>
