@@ -274,7 +274,7 @@
 .css-carousel li {
     counter-increment: index;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding: 0.5rem 0;
     box-sizing: border-box;
     width: 100%;

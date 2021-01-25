@@ -16,7 +16,7 @@
 
 .css-carousel-panel-content div.intro-wrap ul {
     flex: 0 0 auto;
-    margin: 0;
+    margin: 1rem 0 0 0;
 }
 
 .css-carousel-panel-content div.intro-wrap h4{

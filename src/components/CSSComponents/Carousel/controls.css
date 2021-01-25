@@ -48,7 +48,7 @@
     flex-flow: row;
     justify-content: center;
     z-index: 1000;
-    width: 100vw;
+    width: 100%;
 }
 
 .css-carousel-controls .css-carousel-controls-labels label{
