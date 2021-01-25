@@ -27,6 +27,7 @@
   font-size: 1.2em;
   text-align: center;
   transition: 0.2s;
+  -webkit-transform-origin: 50% 60%;
   transform-origin: 50% 60%;
 }
 .css-button:before {
@@ -42,6 +43,7 @@
 }
 .css-button {
   min-width: 15em;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 .arrow {

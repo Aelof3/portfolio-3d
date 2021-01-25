@@ -8,31 +8,6 @@
     --ph: min(100vw,100vh);
 }
 
-* {
-    /* transform-style: preserve-3d; */
-}
-/* 
-@media all and (max-width: 1600px) {
-    :root {
-        --panel-width: 1000px;
-    }
-}
-@media all and (max-width: 1200px) {
-    :root {
-        --panel-width: 800px;
-    }
-}
-@media all and (max-width: 900px) {
-    :root {
-        --panel-width: 500px;
-    }
-}
-@media all and (max-width: 700px) {
-    :root {
-        --panel-width: 400px;
-    }
-} */
-
 .App {
     perspective-origin: center;
     perspective: calc(var(--panel-width) * 2);
@@ -40,60 +15,79 @@
 
 @keyframes spin {
     0% {
+        -webkit-transform: rotateZ(0deg);
         transform: rotateZ(0deg);
     }
     5% {
+        -webkit-transform: rotateZ(0deg);
         transform: rotateZ(0deg);
     }
     10% {
+        -webkit-transform: rotateZ(-40deg);
         transform: rotateZ(-40deg);
     }
     15% {
+        -webkit-transform: rotateZ(-40deg);
         transform: rotateZ(-40deg);
     }
     20% {
+        -webkit-transform: rotateZ(-80deg);
         transform: rotateZ(-80deg);
     }
     25% {
+        -webkit-transform: rotateZ(-80deg);
         transform: rotateZ(-80deg);
     }
     30% {
+        -webkit-transform: rotateZ(-120deg);
         transform: rotateZ(-120deg);
     }
     35% {
+        -webkit-transform: rotateZ(-120deg);
         transform: rotateZ(-120deg);
     }
     40% {
+        -webkit-transform: rotateZ(-160deg);
         transform: rotateZ(-160deg);
     }
     45% {
+        -webkit-transform: rotateZ(-160deg);
         transform: rotateZ(-160deg);
     }
     50% {
+        -webkit-transform: rotateZ(-200deg);
         transform: rotateZ(-200deg);
     }
     55% {
+        -webkit-transform: rotateZ(-200deg);
         transform: rotateZ(-200deg);
     }
     60% {
+        -webkit-transform: rotateZ(-240deg);
         transform: rotateZ(-240deg);
     }
     65% {
+        -webkit-transform: rotateZ(-240deg);
         transform: rotateZ(-240deg);
     }
     70% {
+        -webkit-transform: rotateZ(-280deg);
         transform: rotateZ(-280deg);
     }
     75% {
+        -webkit-transform: rotateZ(-280deg);
         transform: rotateZ(-280deg);
     }
     80% {
+        -webkit-transform: rotateZ(-320deg);
         transform: rotateZ(-320deg);
     }
     90% {
+        -webkit-transform: rotateZ(-320deg);
         transform: rotateZ(-320deg);
     }
     100% {
+        -webkit-transform: rotateZ(-360deg);
         transform: rotateZ(-360deg);
     }
 }
@@ -102,8 +96,11 @@
     position: relative;
     width: var(--panel-width);
     height: var(--panel-width);
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    -webkit-transform-origin: center;
     transform-origin: center;
+    -webkit-transform: rotateX(90deg) translateY(var(--panel-width));
     transform: rotateX(90deg) translateY(var(--panel-width));
 }
 
@@ -113,9 +110,11 @@
     left: 50%;
     width: var(--panel-width);
     height: var(--panel-height);
+    -webkit-transform-origin: center;
     transform-origin: center;
     /* animation: spin 10s ease-in-out infinite; */
     transition-duration: 0.5s;
+    -webkit-transform: rotateZ(0deg);
     transform: rotateZ(0deg);
 }
 
@@ -137,8 +136,10 @@
     padding: 1rem;
     background-color: var(--color1);
     border: 0.5rem solid #eee;
+    -webkit-transform-origin: center;
     transform-origin: center;
     border-radius: 0.5rem;
+    -webkit-transform: translate(-50%,-50%) rotateZ(0deg);
     transform: translate(-50%,-50%) rotateZ(0deg);
 }
 /* 
@@ -156,30 +157,39 @@
 } */
 
 .css-carousel-controls #panel-1:checked ~ .css-carousel .css-carousel-wrap {
+    -webkit-transform:translate(-50%,-50%) rotateZ(0deg);
     transform:translate(-50%,-50%) rotateZ(0deg);
 }
 .css-carousel-controls #panel-2:checked ~ .css-carousel .css-carousel-wrap {
+    -webkit-transform:translate(-50%,-50%) rotateZ(-40deg);
     transform:translate(-50%,-50%) rotateZ(-40deg);
 }
 .css-carousel-controls #panel-3:checked ~ .css-carousel .css-carousel-wrap {
+    -webkit-transform:translate(-50%,-50%) rotateZ(-80deg);
     transform:translate(-50%,-50%) rotateZ(-80deg);
 }
 .css-carousel-controls #panel-4:checked ~ .css-carousel .css-carousel-wrap {
+    -webkit-transform:translate(-50%,-50%) rotateZ(-120deg);
     transform:translate(-50%,-50%) rotateZ(-120deg);
 }
 .css-carousel-controls #panel-5:checked ~ .css-carousel .css-carousel-wrap {
+    -webkit-transform:translate(-50%,-50%) rotateZ(-160deg);
     transform:translate(-50%,-50%) rotateZ(-160deg);
 }
 .css-carousel-controls #panel-6:checked ~ .css-carousel .css-carousel-wrap {
+    -webkit-transform:translate(-50%,-50%) rotateZ(-200deg);
     transform:translate(-50%,-50%) rotateZ(-200deg);
 }
 .css-carousel-controls #panel-7:checked ~ .css-carousel .css-carousel-wrap {
+    -webkit-transform:translate(-50%,-50%) rotateZ(-240deg);
     transform:translate(-50%,-50%) rotateZ(-240deg);
 }
 .css-carousel-controls #panel-8:checked ~ .css-carousel .css-carousel-wrap {
+    -webkit-transform:translate(-50%,-50%) rotateZ(-280deg);
     transform:translate(-50%,-50%) rotateZ(-280deg);
 }
 .css-carousel-controls #panel-9:checked ~ .css-carousel .css-carousel-wrap {
+    -webkit-transform:translate(-50%,-50%) rotateZ(-320deg);
     transform:translate(-50%,-50%) rotateZ(-320deg);
 }
 
@@ -238,42 +248,52 @@
 }
 
 .css-carousel * {
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
 .css-carousel-panel:nth-child(1) {
+    -webkit-transform: rotateZ(0deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
     transform: rotateZ(0deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
 }
 
 .css-carousel-panel:nth-child(2) {
+    -webkit-transform: rotateZ(40deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
     transform: rotateZ(40deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
 }
 
 .css-carousel-panel:nth-child(3) {
+    -webkit-transform: rotateZ(80deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
     transform: rotateZ(80deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
 }
 
 .css-carousel-panel:nth-child(4) {
+    -webkit-transform: rotateZ(120deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
     transform: rotateZ(120deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
 }
 
 .css-carousel-panel:nth-child(5) {
+    -webkit-transform: rotateZ(160deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
     transform: rotateZ(160deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
 }
 
 .css-carousel-panel:nth-child(6) {
+    -webkit-transform: rotateZ(200deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
     transform: rotateZ(200deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
 }
 
 .css-carousel-panel:nth-child(7) {
+    -webkit-transform: rotateZ(240deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
     transform: rotateZ(240deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
 }
 
 .css-carousel-panel:nth-child(8) {
+    -webkit-transform: rotateZ(280deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
     transform: rotateZ(280deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
 }
 
 .css-carousel-panel:nth-child(9) {
+    -webkit-transform: rotateZ(320deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
     transform: rotateZ(320deg) translateY(calc(var(--panel-width) * -1.375)) rotateX(-90deg);
 }
 
