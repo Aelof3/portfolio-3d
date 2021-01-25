@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .css-button {
   display: inline-block;
@@ -11,6 +19,8 @@
   background: #009ED8;
   border: none;
   color: white;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 .css-button:before,
@@ -26,9 +36,12 @@
   font-family: 'FontAwesome', sans-serif;
   font-size: 1.2em;
   text-align: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
   -webkit-transform-origin: 50% 60%;
-  transform-origin: 50% 60%;
+  -ms-transform-origin: 50% 60%;
+      transform-origin: 50% 60%;
 }
 .css-button:before {
   background: rgba(0, 0, 0, 0.1);
@@ -97,7 +110,8 @@
   -webkit-animation: none;
   -webkit-transform: skew(-20deg);
   animation: none;
-  transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+      transform: skew(-20deg);
   text-indent: 0.1em;
 }
 .search:after {
@@ -107,7 +121,8 @@
   -webkit-animation: none;
   -webkit-transform: scale(1.4);
   animation: none;
-  transform: scale(1.4);
+  -ms-transform: scale(1.4);
+      transform: scale(1.4);
 }
 @-webkit-keyframes bounceright {
   from {
@@ -127,17 +142,21 @@
 }
 @keyframes bounceright {
   from {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   to {
-    transform: translateX(3px);
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
   }
 }
 @keyframes wiggle {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
   }
 }

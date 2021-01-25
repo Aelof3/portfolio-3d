@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 :root {
@@ -13,6 +20,85 @@
     perspective-origin: center;
     -webkit-perspective: calc(var(--panel-width) * 2);
     perspective: calc(var(--panel-width) * 2);
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+    5% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+    10% {
+        -webkit-transform: rotateZ(-40deg);
+        transform: rotateZ(-40deg);
+    }
+    15% {
+        -webkit-transform: rotateZ(-40deg);
+        transform: rotateZ(-40deg);
+    }
+    20% {
+        -webkit-transform: rotateZ(-80deg);
+        transform: rotateZ(-80deg);
+    }
+    25% {
+        -webkit-transform: rotateZ(-80deg);
+        transform: rotateZ(-80deg);
+    }
+    30% {
+        -webkit-transform: rotateZ(-120deg);
+        transform: rotateZ(-120deg);
+    }
+    35% {
+        -webkit-transform: rotateZ(-120deg);
+        transform: rotateZ(-120deg);
+    }
+    40% {
+        -webkit-transform: rotateZ(-160deg);
+        transform: rotateZ(-160deg);
+    }
+    45% {
+        -webkit-transform: rotateZ(-160deg);
+        transform: rotateZ(-160deg);
+    }
+    50% {
+        -webkit-transform: rotateZ(-200deg);
+        transform: rotateZ(-200deg);
+    }
+    55% {
+        -webkit-transform: rotateZ(-200deg);
+        transform: rotateZ(-200deg);
+    }
+    60% {
+        -webkit-transform: rotateZ(-240deg);
+        transform: rotateZ(-240deg);
+    }
+    65% {
+        -webkit-transform: rotateZ(-240deg);
+        transform: rotateZ(-240deg);
+    }
+    70% {
+        -webkit-transform: rotateZ(-280deg);
+        transform: rotateZ(-280deg);
+    }
+    75% {
+        -webkit-transform: rotateZ(-280deg);
+        transform: rotateZ(-280deg);
+    }
+    80% {
+        -webkit-transform: rotateZ(-320deg);
+        transform: rotateZ(-320deg);
+    }
+    90% {
+        -webkit-transform: rotateZ(-320deg);
+        transform: rotateZ(-320deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(-360deg);
+        transform: rotateZ(-360deg);
+    }
 }
 
 @keyframes spin {
@@ -101,7 +187,8 @@
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform-origin: center;
-    transform-origin: center;
+    -ms-transform-origin: center;
+        transform-origin: center;
     -webkit-transform: rotateX(90deg) translateY(var(--panel-width));
     transform: rotateX(90deg) translateY(var(--panel-width));
 }
@@ -113,11 +200,15 @@
     width: var(--panel-width);
     height: var(--panel-height);
     -webkit-transform-origin: center;
-    transform-origin: center;
+    -ms-transform-origin: center;
+        transform-origin: center;
     /* animation: spin 10s ease-in-out infinite; */
-    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
     -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
+    -ms-transform: rotate(0deg);
+        transform: rotateZ(0deg);
 }
 
 @media all and (max-width: 1200px){
@@ -128,10 +219,19 @@
     width: var(--panel-width);
     height: var(--panel-height);
     /* height: 100vh; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     position: absolute;
     top: 0;
     left: 0;
@@ -139,10 +239,12 @@
     background-color: var(--color1);
     border: 0.5rem solid #eee;
     -webkit-transform-origin: center;
-    transform-origin: center;
+    -ms-transform-origin: center;
+        transform-origin: center;
     border-radius: 0.5rem;
     -webkit-transform: translate(-50%,-50%) rotateZ(0deg);
-    transform: translate(-50%,-50%) rotateZ(0deg);
+    -ms-transform: translate(-50%,-50%) rotate(0deg);
+        transform: translate(-50%,-50%) rotateZ(0deg);
 }
 /* 
 @media all and (max-width: 500px) {
@@ -160,39 +262,48 @@
 
 .css-carousel-controls #panel-1:checked ~ .css-carousel .css-carousel-wrap {
     -webkit-transform:translate(-50%,-50%) rotateZ(0deg);
-    transform:translate(-50%,-50%) rotateZ(0deg);
+    -ms-transform:translate(-50%,-50%) rotate(0deg);
+        transform:translate(-50%,-50%) rotateZ(0deg);
 }
 .css-carousel-controls #panel-2:checked ~ .css-carousel .css-carousel-wrap {
     -webkit-transform:translate(-50%,-50%) rotateZ(-40deg);
-    transform:translate(-50%,-50%) rotateZ(-40deg);
+    -ms-transform:translate(-50%,-50%) rotate(-40deg);
+        transform:translate(-50%,-50%) rotateZ(-40deg);
 }
 .css-carousel-controls #panel-3:checked ~ .css-carousel .css-carousel-wrap {
     -webkit-transform:translate(-50%,-50%) rotateZ(-80deg);
-    transform:translate(-50%,-50%) rotateZ(-80deg);
+    -ms-transform:translate(-50%,-50%) rotate(-80deg);
+        transform:translate(-50%,-50%) rotateZ(-80deg);
 }
 .css-carousel-controls #panel-4:checked ~ .css-carousel .css-carousel-wrap {
     -webkit-transform:translate(-50%,-50%) rotateZ(-120deg);
-    transform:translate(-50%,-50%) rotateZ(-120deg);
+    -ms-transform:translate(-50%,-50%) rotate(-120deg);
+        transform:translate(-50%,-50%) rotateZ(-120deg);
 }
 .css-carousel-controls #panel-5:checked ~ .css-carousel .css-carousel-wrap {
     -webkit-transform:translate(-50%,-50%) rotateZ(-160deg);
-    transform:translate(-50%,-50%) rotateZ(-160deg);
+    -ms-transform:translate(-50%,-50%) rotate(-160deg);
+        transform:translate(-50%,-50%) rotateZ(-160deg);
 }
 .css-carousel-controls #panel-6:checked ~ .css-carousel .css-carousel-wrap {
     -webkit-transform:translate(-50%,-50%) rotateZ(-200deg);
-    transform:translate(-50%,-50%) rotateZ(-200deg);
+    -ms-transform:translate(-50%,-50%) rotate(-200deg);
+        transform:translate(-50%,-50%) rotateZ(-200deg);
 }
 .css-carousel-controls #panel-7:checked ~ .css-carousel .css-carousel-wrap {
     -webkit-transform:translate(-50%,-50%) rotateZ(-240deg);
-    transform:translate(-50%,-50%) rotateZ(-240deg);
+    -ms-transform:translate(-50%,-50%) rotate(-240deg);
+        transform:translate(-50%,-50%) rotateZ(-240deg);
 }
 .css-carousel-controls #panel-8:checked ~ .css-carousel .css-carousel-wrap {
     -webkit-transform:translate(-50%,-50%) rotateZ(-280deg);
-    transform:translate(-50%,-50%) rotateZ(-280deg);
+    -ms-transform:translate(-50%,-50%) rotate(-280deg);
+        transform:translate(-50%,-50%) rotateZ(-280deg);
 }
 .css-carousel-controls #panel-9:checked ~ .css-carousel .css-carousel-wrap {
     -webkit-transform:translate(-50%,-50%) rotateZ(-320deg);
-    transform:translate(-50%,-50%) rotateZ(-320deg);
+    -ms-transform:translate(-50%,-50%) rotate(-320deg);
+        transform:translate(-50%,-50%) rotateZ(-320deg);
 }
 
 .css-carousel-panel-header {
@@ -201,38 +312,59 @@
     font-size: 2rem;
     font-weight: 200;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: left;
     color: #6edb67; 
     font-family: 'Julius Sans One', sans-serif;
 }
 
 .css-carousel-panel-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
-    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     width: 90%;
     height: 85%;
 }
 
 .css-carousel-panel-content img {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     position: relative;
     width: 100%;
     height: min(20%,200px);
-    object-fit: cover;
-    object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
     border-radius: 0.5rem;
     padding:0.5rem;
-    box-shadow: 0 0.25rem 0.45rem var(--color2);
+    -webkit-box-shadow: 0 0.25rem 0.45rem var(--color2);
+            box-shadow: 0 0.25rem 0.45rem var(--color2);
     background-color: #eee;
 }
 
 
 .css-carousel-panel-content p {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     width: 100%;
     font-size: 1rem;
 }
@@ -241,12 +373,16 @@
     font-size: 1rem;
 }
 .css-carousel-panel-content ul {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     width: 100%;
 }
 
 .css-carousel-panel-content a {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
 }
 
 .css-carousel * {
@@ -313,10 +449,15 @@
 
 .css-carousel li {
     counter-increment: index;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 0.5rem 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
     text-align: left;
     
@@ -331,9 +472,13 @@
     font-weight: 700;
     min-width: 3rem;
     padding-right: .5rem;
-    font-feature-settings: "tnum";
+    -webkit-font-feature-settings: "tnum";
+            font-feature-settings: "tnum";
     font-variant-numeric: tabular-nums;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#7fffd4),to(#ff4500));
+    background-image: -o-linear-gradient(top,#7fffd4,#ff4500);
     background-image: linear-gradient(180deg,#7fffd4,#ff4500);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -350,5 +495,7 @@
 
 .css-carousel li strong{ 
     margin-right: 0.5rem;
-    flex:0 0 auto;
+    -webkit-box-flex:0;
+        -ms-flex:0 0 auto;
+            flex:0 0 auto;
 }
