@@ -9,7 +9,9 @@
 }
 
 .App {
+    -webkit-perspective-origin: center;
     perspective-origin: center;
+    -webkit-perspective: calc(var(--panel-width) * 2);
     perspective: calc(var(--panel-width) * 2);
 }
 
