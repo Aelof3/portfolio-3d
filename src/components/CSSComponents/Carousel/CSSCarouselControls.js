@@ -5,7 +5,7 @@ export default class CSSCarouselControls extends Component {
     render() {
         return (
             <div className="css-carousel-controls">
-                <input type="radio" id="panel-1" name="panel" value="1" defaultChecked="true"/>
+                <input type="radio" id="panel-1" name="panel" value="1" defaultChecked="true" autoFocus="true"/>
                 <input type="radio" id="panel-2" name="panel" value="2" />
                 <input type="radio" id="panel-3" name="panel" value="3" />
                 <input type="radio" id="panel-4" name="panel" value="4" />
