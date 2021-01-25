@@ -2,10 +2,6 @@
     --button-bg: #079702;
 }
 
-.css-carousel-controls {
-    z-index: 1000;
-}
-
 .css-carousel-controls input[type="radio"] {
     margin: 0;
     position: fixed;
@@ -15,6 +11,7 @@
     height: 1rem;
     z-index: 1000;
     opacity: 1;
+    cursor: pointer;
 }
 #panel-1 {
     left: calc(50% - 12rem);
