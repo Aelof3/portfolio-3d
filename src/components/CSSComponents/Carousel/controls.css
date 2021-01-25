@@ -2,6 +2,10 @@
     --button-bg: #079702;
 }
 
+.css-carousel-controls {
+    z-index: 1000;
+}
+
 .css-carousel-controls input[type="radio"] {
     margin: 0;
     position: fixed;
