@@ -8,7 +8,7 @@ export default class CSSCarouselPanelProjectPLANET extends Component {
              <>
                 <img alt="" src={img} />
                 <p>
-                    <a href="https://github.com/Aelof3/planets/">Planet Hopping Game</a>
+                    <a href="https://github.com/Aelof3/planets/">Planet Hopping Game - https://github.com/Aelof3/planets/</a>
                 </p>
                 <ul>
                     <li>Wanted to learn a bit about 3D in browsers, as well as WebGL.</li>

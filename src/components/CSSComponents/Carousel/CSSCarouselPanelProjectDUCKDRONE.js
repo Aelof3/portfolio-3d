@@ -8,7 +8,7 @@ export default class CSSCarouselPanelProjectDUCKDRONE extends Component {
             <>
                 <img alt="" src={img} />
                 <p>
-                    <a href="https://github.com/Aelof3/DuckDrone/">A hard game of fighting physics with a duck</a>
+                    <a href="https://github.com/Aelof3/DuckDrone/">A hard game of fighting physics with a duck - https://github.com/Aelof3/DuckDrone</a>
                 </p>
                 <ul>
                     <li>Had an idea, and wanted to see if I could figure out a way to do it.</li>

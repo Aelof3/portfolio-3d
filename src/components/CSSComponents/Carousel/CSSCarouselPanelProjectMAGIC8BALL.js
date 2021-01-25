@@ -8,7 +8,7 @@ export default class CSSCarouselPanelProjectMAGIC8BALL extends Component {
              <>
                 <img alt="" src={img} />
                 <p>
-                    <a href="https://github.com/Aelof3/magic8ball">Magic 8 Ball - Online</a>
+                    <a href="https://github.com/Aelof3/magic8ball">Magic 8 Ball - https://github.com/Aelof3/magic8ball</a>
                 </p>
                 <ul>
                     <li>Created a full stack magic 8 ball application</li>

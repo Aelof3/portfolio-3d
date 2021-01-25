@@ -8,7 +8,7 @@ export default class CSSCarouselPanelProjectHMONG extends Component {
              <>
                 <img alt="" src={img} />
                 <p>
-                    <a href="https://github.com/Aelof3/spaced-repetition">Spaced Repetition Language Learning App - Hmong</a>
+                    <a href="https://github.com/Aelof3/spaced-repetition">Spaced Repetition Language Learning App - https://github.com/Aelof3/spaced-repetition</a>
                 </p>
                 <ul>
                     <li>Created a full stack language (Hmong) learning application</li>
