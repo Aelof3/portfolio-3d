@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 :root {
     --button-bg: #079702;
 }
@@ -24,44 +17,71 @@
     opacity: 1;
 }
 #panel-1 {
+    left: -webkit-calc(50% - 12rem);
+    left: -moz-calc(50% - 12rem);
     left: calc(50% - 12rem);
 }
 #panel-2 {
+    left: -webkit-calc(50% - 9rem);
+    left: -moz-calc(50% - 9rem);
     left: calc(50% - 9rem);
 }
 #panel-3 {
+    left: -webkit-calc(50% - 6rem);
+    left: -moz-calc(50% - 6rem);
     left: calc(50% - 6rem);
 }
 #panel-4 {
+    left: -webkit-calc(50% - 3rem);
+    left: -moz-calc(50% - 3rem);
     left: calc(50% - 3rem);
 }
 #panel-5 {
+    left: -webkit-calc(50% - 0rem);
+    left: -moz-calc(50% - 0rem);
     left: calc(50% - 0rem);
 }
 #panel-6 {
+    left: -webkit-calc(50% + 3rem);
+    left: -moz-calc(50% + 3rem);
     left: calc(50% + 3rem);
 }
 #panel-7 {
+    left: -webkit-calc(50% + 6rem);
+    left: -moz-calc(50% + 6rem);
     left: calc(50% + 6rem);
 }
 #panel-8 {
+    left: -webkit-calc(50% + 9rem);
+    left: -moz-calc(50% + 9rem);
     left: calc(50% + 9rem);
 }
 #panel-9 {
+    left: -webkit-calc(50% + 12rem);
+    left: -moz-calc(50% + 12rem);
     left: calc(50% + 12rem);
 }
 .css-carousel-controls .css-carousel-controls-labels {
     position: fixed;
     right: 0;
+    bottom: -webkit-calc(2.5rem + 30px);
+    bottom: -moz-calc(2.5rem + 30px);
     bottom: calc(2.5rem + 30px);
     display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     z-index: 1000;
@@ -77,23 +97,35 @@
     margin: 0.25rem;
     padding: 0.5rem; */
     display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+       -moz-border-radius: 1rem;
+            border-radius: 1rem;
     cursor: pointer;
     font-size: 0rem;
     -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     width: max(35%,250px);
     margin: 0 auto;
 }
@@ -109,8 +141,11 @@
     padding:0;
     margin:0.25rem;
     -webkit-transform: translateZ(10px);
-    transform: translateZ(10px);
+       -moz-transform: translateZ(10px);
+            transform: translateZ(10px);
     opacity: 1;
+    font-size: min(-webkit-calc(1vw + 12px),-webkit-calc(1vh + 12px));
+    font-size: min(-moz-calc(1vw + 12px),-moz-calc(1vh + 12px));
     font-size: min(calc(1vw + 12px),calc(1vh + 12px));
 }
 .css-carousel-controls #panel-1:checked ~ .css-carousel-controls-labels label[for="panel-1"]{

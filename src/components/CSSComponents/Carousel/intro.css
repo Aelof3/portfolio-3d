@@ -3,19 +3,38 @@
 
 
 .css-carousel-panel-content div.intro-wrap {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
 }
 
 .css-carousel-panel-content div.intro-wrap > img {
-    object-position: center;
+    -o-object-position: center;
+       object-position: center;
 }
 
 .css-carousel-panel-content div.intro-wrap ul {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     margin: 0;
 }
 
@@ -42,9 +61,23 @@
 }
 
 .css-carousel-panel-content div.intro-wrap li div.intro-wrap-list-content-column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 100%;
 }
 
@@ -60,9 +93,14 @@
 }
 
 .css-carousel-panel-content div.intro-wrap img.intro-location-image {
-    object-position: 0 -60px;
+    -o-object-position: 0 -60px;
+       object-position: 0 -60px;
     height: min(10vw,200px);
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
 }
 
 .svg-defs-hidden {
@@ -81,10 +119,26 @@
 .css-carousel-panel-content div.intro-wrap li .intro-wrap-list-content-interests{
     padding: 0;
     margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     width: 100%;
 }
 
@@ -93,17 +147,41 @@
     margin: 0;
     border: 0.25rem solid rgba(200,255,200,1);
     background-color: rgba(0,255,0,0.2);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     padding: 1rem;
-    border-radius: 100rem;
+    -webkit-border-radius: 100rem;
+       -moz-border-radius: 100rem;
+            border-radius: 100rem;
     width: min(20vw, 175px);
     margin: 0 0.5rem;
     height: min(20vw, 175px);
-    flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+       -moz-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
 }
 .css-carousel-panel-content div.intro-wrap li .intro-wrap-list-content-interests li::before{
     content: "";

@@ -1,11 +1,6 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 :root {
+  font-size:max(-webkit-calc(0.75vw + 6px),-webkit-calc(0.75vh + 6px));
+  font-size:max(-moz-calc(0.75vw + 6px),-moz-calc(0.75vh + 6px));
   font-size:max(calc(0.75vw + 6px),calc(0.75vh + 6px));
 }
 html, body {
@@ -21,16 +16,21 @@ html, body {
 
 * {
   -webkit-box-sizing: border-box !important;
+     -moz-box-sizing: border-box !important;
           box-sizing: border-box !important;
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: auto;
+     -moz-font-feature-settings: auto;
           font-feature-settings: auto;
   -webkit-font-kerning: auto;
   font-kerning: auto;
   outline: 0 !important;
   background-repeat: no-repeat;
   background-position: center;
-  background-size:contain;
+  -webkit-background-size:contain;
+     -moz-background-size:contain;
+       -o-background-size:contain;
+          background-size:contain;
   color: #fff;
 }
 
