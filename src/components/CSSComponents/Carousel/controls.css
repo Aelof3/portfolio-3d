@@ -41,9 +41,10 @@
     left: calc(50% + 12rem);
 }
 .css-carousel-controls .css-carousel-controls-labels {
-    position: fixed;
+    position: absolute;
+    left: 0;
     right: 0;
-    bottom: calc(2.5rem + 50px);
+    top:50%;
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -67,7 +68,8 @@
     cursor: pointer;
     font-size: 0rem;
     transform-style: preserve-3d;
-    width: max(35%,250px);
+    width: 100%;
+    max-width: min(1600px,100vw);
     margin: 0 auto;
 }
 
