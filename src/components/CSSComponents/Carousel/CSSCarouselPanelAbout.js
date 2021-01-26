@@ -14,7 +14,7 @@ export default class CSSCarouselPanelAbout extends Component {
                                 student. Anything less is not good enough.</p>
                             <p>Coding is a great example of something that I can always learn more about. This is probably why I enjoy it so much.</p>
                             <p>I am also a fiend for debugging and well known among friends for being the go-to guy for help. I like to spend as much
-                                time as I can helping fresh coding minds, and watching their ambition grow.</p>
+                                time as I can helping fresh coding minds and watching their ambition grow.</p>
                         </div>
                     </li>
                     <li>
