@@ -12,7 +12,7 @@ export default class CSSCarouselPanelProjectHMONG extends Component {
                 </p>
                 <ul>
                     <li><strong>Name:</strong>Spaced Repetition - Learning Hmong</li>
-                    <li><strong>Description:</strong>Full stack language (Hmong) learning application</li>
+                    <li><strong>Description:</strong>Full-stack language (Hmong) learning application</li>
                     <li><strong>Why It Was Built:</strong>Created for my second capstone project with Thinkful</li>
                     <li><strong>Technologies (front end):</strong>React and CSS</li>
                     <li><strong>Technologies (back end):</strong>Node, Express, and Postgresql</li>

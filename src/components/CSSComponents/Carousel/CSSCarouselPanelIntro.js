@@ -10,7 +10,7 @@ export default class CSSCarouselPanelIntro extends Component {
                 <img alt="" src={me} />
                 <ul>
                     <li><strong>NAME:</strong>Richard Folea</li>
-                    <li><strong>DESCRIPTION:</strong>I am a self taught software developer as well as self taught and OSCP certified ethical hacker</li>
+                    <li><strong>DESCRIPTION:</strong>I am a self-taught software developer as well as OSCP certified ethical hacker</li>
                     <li>
                         <div className="intro-wrap-list-content-column">
                             <p><strong>LOCATION:</strong>I live just north of Atlanta, GA</p>

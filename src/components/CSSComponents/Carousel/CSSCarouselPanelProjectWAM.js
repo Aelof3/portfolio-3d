@@ -12,7 +12,7 @@ export default class CSSCarouselPanelProjectWAM extends Component {
                 </p>
                 <ul>
                     <li><strong>Name:</strong>Whack-A-Mole 3D</li>
-                    <li><strong>Description:</strong>Full stack whack-a-mole online application</li>
+                    <li><strong>Description:</strong>Full-stack whack-a-mole online application</li>
                     <li><strong>Why It Was Built:</strong>My first capstone project for Thinkful</li>
                     <li><strong>Technologies (front end):</strong>React and CSS 3D transforms</li>
                     <li><strong>Technologies (back end):</strong>Node, Express, and Postgresql</li>

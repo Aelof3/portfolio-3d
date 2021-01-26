@@ -12,7 +12,7 @@ export default class CSSCarouselPanelProjectMAGIC8BALL extends Component {
                 </p>
                 <ul>
                     <li><strong>Name:</strong>Magic 8 Ball - Online</li>
-                    <li><strong>Description:</strong>Full stack magic 8 ball application</li>
+                    <li><strong>Description:</strong>Full-stack magic 8 ball application</li>
                     <li><strong>Why It Was Built:</strong>My third capstone project with Thinkful</li>
                     <li><strong>Technologies (front end):</strong>React and CSS 3D transforms</li>
                     <li><strong>Technologies (back end):</strong>Node, Express, and Postgresql</li>

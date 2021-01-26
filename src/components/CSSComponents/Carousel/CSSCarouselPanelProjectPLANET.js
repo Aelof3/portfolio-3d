@@ -15,7 +15,7 @@ export default class CSSCarouselPanelProjectPLANET extends Component {
                     <li><strong>Description:</strong>Planet hopping game that uses gravity in a unique way</li>
                     <li><strong>Why It Was Built:</strong>Wanted to learn a bit about 3D in browsers, as well as WebGL.</li>
                     <li><strong>Technologies:</strong>Uses three.js and cannon.js</li>
-                    <li><strong>Intended Audience:</strong>Anybody interested in killing some time with a web based game</li>
+                    <li><strong>Intended Audience:</strong>Anybody interested in killing some time with a web-based game</li>
                 </ul>
                 <CSSButton href="https://aelof3.github.io/planets/" text="Live Demo" />
              </>
